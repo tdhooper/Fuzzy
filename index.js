@@ -2,8 +2,10 @@
 * @name Fuzzy
 */
 
+// Paste into http://wavepot.com/
+
 export function dsp(t) {
-  px = repeater(t, 5, 0.2);
+  var px = repeater(t, 5, 0.2);
   var sound = (psy(t) * px) * 0.5 * 0.00000001;
   
   var r = cos(t, 5, 1) * 0.5 + 0.5;
